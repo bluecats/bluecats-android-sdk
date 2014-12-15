@@ -1,7 +1,7 @@
 BlueCats SDK for Android
 ====================
 
-The BlueCats' SDKs have been development for quick deployment so you can begin receiving accurate and real time proximity verification quickly.
+The BlueCats' SDKs have been developed for easy integration and to offer flexiblity across different use cases.  Please let us know if you have any questions at developers@bluecats.com.
 
 ###**The BlueCats Android SDK documentation is located [here](https://github.com/bluecats/bluecats-android-sdk/wiki).**
 
