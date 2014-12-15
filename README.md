@@ -3,9 +3,9 @@ BlueCats SDK for Android
 
 The BlueCats' SDKs have been development for quick deployment so you can begin receiving accurate and real time proximity verification quickly.
 
-###**The BlueCats Android SDK documentation has moved [here!](https://github.com/bluecats/bluecats-android-sdk/wiki)**
+###**The BlueCats Android SDK documentation is [here!](https://github.com/bluecats/bluecats-android-sdk/wiki)**
 
-Need some beacons? Request a StarterPack from [www.bluecats.com](http://www.bluecats.com/starterpack) or email our [sales team](mailto:sales@bluecats.com).
+Need some beacons? [Contact us for a StarterPack](http://www.bluecats.com/starterpack) or email our [sales team](mailto:sales@bluecats.com).
 
 ##Here's the basics:
 
