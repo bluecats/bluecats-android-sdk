@@ -5,7 +5,7 @@ The BlueCats' SDKs have been development for quick deployment so you can begin r
 
 ###**The BlueCats Android SDK documentation is located [here](https://github.com/bluecats/bluecats-android-sdk/wiki).**
 
-Need some beacons? [Contact us for a StarterPack](http://www.bluecats.com/starterpack) or email our [sales team](mailto:sales@bluecats.com).
+Need some beacons? [Contact us](http://www.bluecats.com/starterpack) for a StarterPack or email our [sales team](mailto:sales@bluecats.com).
 
 ##Here's the basics:
 
