@@ -10,7 +10,7 @@ Need some beacons? [Contact us](http://www.bluecats.com/starterpack) for a Start
 ##Here's the basics:
 
 ####Step 1. 
-Copy the com.bluecats_sdk.jar file into your projects /libs folder.
+Copy the com.bluecats_sdk.jar file into your project's /libs folder.
 
 ####Step 2. 
 Get an appToken from [http://app.bluecats.com/apps](http://app.bluecats.com/apps)
@@ -21,12 +21,13 @@ See the sample BlueCats Scratching Post app for usage and integration instructio
 ## Requirements
 
 Android SDK version 4.3 and up
-Google Play Services SDK
+
+**Google Play Services SDK**
 
 
 ## Have a Question?
 
-* If you've found a bug, open an issue.
-* If you have a general question, please see our [support center](support.bluecats.com) for articles on our platform and beacons.
-* If you want a particular feature, open an issue.
+* If you've found a bug, please open an issue.
+* If you have a general question, see our [support center](support.bluecats.com) for articles on our platform and beacons.
+* If you want a particular feature, please open an issue.
 * If taking a look at our SDK for the first time, please see our [Android SDK documentation](https://github.com/bluecats/bluecats-android-sdk/wiki).
