@@ -23,7 +23,7 @@ See the sample BlueCats Scratching Post app for usage and integration instructio
 If you are upgrading to Version 1.11.0 you will need to make the following changes to your integration:
 
 1. The Wake Lock permission will need to be added to your app's AndroidManifest.xml (android.permission.WAKE_LOCK).
-2. The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the appropriate libbluecats_sdk.so (contained in the various jni build folders). you can copy only the build needed for your app, or all of them if you are unsure exactly which are needed. more info on these builds can be found at the following URLs:
+2. The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the appropriate libbluecats_sdk.so (contained in the various jni build folders). You can copy only the build needed for your app, or all of them if you are unsure exactly which are needed. More info on these builds can be found at the following URLs:
 
 [http://developer.android.com/reference/android/os/Build.html](http://developer.android.com/reference/android/os/Build.html)
 [https://developer.android.com/ndk/guides/abis.html](https://developer.android.com/ndk/guides/abis.html)
