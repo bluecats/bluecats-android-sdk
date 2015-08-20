@@ -5,7 +5,7 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibl
 
 ###**The BlueCats Android SDK documentation is located [here](https://github.com/bluecats/bluecats-android-sdk/wiki).**
 
-Need some beacons? [Contact us](http://www.bluecats.com/starterpack) for a StarterPack or email our [sales team](mailto:sales@bluecats.com).
+Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ##Here's the basics:
 
@@ -13,26 +13,24 @@ Need some beacons? [Contact us](http://www.bluecats.com/starterpack) for a Start
 Copy the com.bluecats_sdk.jar file into your project's /libs folder.
 
 ####Step 2. 
-Get an appToken from [http://app.bluecats.com/apps](http://app.bluecats.com/apps)
+Get an appToken from [app.bluecats.com/apps](http://app.bluecats.com/apps)
 
 ####Step 3.
-See the sample BlueCats Scratching Post app for usage and integration instructions [https://github.com/bluecats/bluecats-scratchingpost-android](https://github.com/bluecats/bluecats-scratchingpost-android)
+See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Upgrading to Version 1.11.0.
+## Upgrading to Android SDK Version 1.11.0.
 
 If you are upgrading to Version 1.11.0 you will need to make the following changes to your integration:
 
-1. The Wake Lock permission will need to be added to your app's AndroidManifest.xml (android.permission.WAKE_LOCK).
-2. The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the appropriate libbluecats_sdk.so (contained in the various jni build folders). You can copy only the build needed for your app, or all of them if you are unsure exactly which are needed. More info on these builds can be found at the following URLs:
-
-[http://developer.android.com/reference/android/os/Build.html](http://developer.android.com/reference/android/os/Build.html)
+1. The Wake Lock permission will need to be added to your app's AndroidManifest.xml ([android.permission.WAKE_LOCK](http://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK)).
+2. The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the appropriate libbluecats_sdk.so (contained in the various jni build folders). You can copy only the build needed for your app, or all of them if you are unsure exactly which are needed. More info on these builds can be found at the following URLs:  
+[http://developer.android.com/reference/android/os/Build.html](http://developer.android.com/reference/android/os/Build.html)  
 [https://developer.android.com/ndk/guides/abis.html](https://developer.android.com/ndk/guides/abis.html)
 
 ## Requirements
 
-Android SDK version 4.3 and up
+Android SDK version 4.3 and up  
 **Google Play Services SDK**
-
 
 ## Have a Question?
 
