@@ -33,7 +33,7 @@ If you are upgrading to Version 1.11.0 you will need to make the following chang
 - The SDK will still work on lower versions of Android, but Bluetooth Low Energy Scanning will be disabled. You will still be able to make use of the Sites Nearby functionality as this does not involve scanning for beacons.  
 
 ####Google Play Services
-- The required minimum version of Google Play Service is 5.0.77-000 (r18). However we recommend the latest version of Google Play Service to be integrated.
+- The required minimum version of Google Play Services is 5.0.77-000 (r18). However we recommend the latest version of Google Play Services to be integrated.
 
 ## Have a Question?
 
