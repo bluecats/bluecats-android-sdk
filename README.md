@@ -27,6 +27,25 @@ If you are upgrading to Version 1.11.0 you will need to make the following chang
 [http://developer.android.com/reference/android/os/Build.html](http://developer.android.com/reference/android/os/Build.html)  
 [https://developer.android.com/ndk/guides/abis.html](https://developer.android.com/ndk/guides/abis.html)
 
+## Using Android Studio
+
+Because of the recent addition of the [ABIs](https://developer.android.com/ndk/guides/abis.html) in the SDK, you will need to place each of the ABI folders in the correct location for Android Studio. This location is at %project%\app\src\main\jniLibs\. You will also need to place the bluecats_sdk.jar into the libs folder, located at %project%\app\libs\. An example folder structure follows:
+
+    │  %project%/  
+    │    app/  
+    │      libs/  
+    │        bluecats_sdk.jar  
+    │      src/  
+    │        main/  
+    │          jniLibs/  
+    │            arm64-v8a/  
+    │            armeabi/  
+    │            armeabi-v7a/  
+    │            mips/  
+    │            mips64/  
+    │            x86/  
+    │            x86_64/
+
 ## Requirements
 
 ####Android SDK version 4.3 and up  
