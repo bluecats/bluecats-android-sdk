@@ -1,33 +1,6 @@
-BlueCats SDK for Android
+BlueCats SDK for Android v1.10.3
 ====================
 
-The BlueCats' SDKs have been developed for easy integration and to offer flexiblity across different use cases.  Please let us know if you have any questions at developers@bluecats.com.
+This release is a workaround for a GPS issue in release 1.10.2 that was causing excessive battery drain on the device if GPS was enabled.
 
-###**The BlueCats Android SDK documentation is located [here](https://github.com/bluecats/bluecats-android-sdk/wiki).**
-
-Need some beacons? [Contact us](http://www.bluecats.com/starterpack) for a StarterPack or email our [sales team](mailto:sales@bluecats.com).
-
-##Here's the basics:
-
-####Step 1. 
-Copy the com.bluecats_sdk.jar file into your project's /libs folder.
-
-####Step 2. 
-Get an appToken from [http://app.bluecats.com/apps](http://app.bluecats.com/apps)
-
-####Step 3.
-See the sample BlueCats Scratching Post app for usage and integration instructions [https://github.com/bluecats/bluecats-scratchingpost-android](https://github.com/bluecats/bluecats-scratchingpost-android)
-
-## Requirements
-
-Android SDK version 4.3 and up
-
-**Google Play Services SDK**
-
-
-## Have a Question?
-
-* If you've found a bug, please open an issue.
-* If you have a general question, see our [support center](support.bluecats.com) for articles on our platform and beacons.
-* If you want a particular feature, please open an issue.
-* If taking a look at our SDK for the first time, please see our [Android SDK documentation](https://github.com/bluecats/bluecats-android-sdk/wiki).
+The issue is with Google's LocationServices.FusedLocationApi not releasing a hold on GPS for its location updates. 
