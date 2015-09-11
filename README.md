@@ -7,8 +7,8 @@ The issue is with Google's LocationServices.FusedLocationApi not releasing a hol
 
 ##Pre-requisites:
 
-This issue is independant of whether bluetooth is on or off.
-Location services on - must be high accuracy (GPS enabled).
+* This issue is independant of whether bluetooth is on or off.
+* Location services on - must be high accuracy (GPS enabled).
 
 ##Steps to reproduce:
 
