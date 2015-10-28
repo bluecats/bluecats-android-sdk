@@ -52,7 +52,11 @@ Because of the recent addition of the [ABIs](https://developer.android.com/ndk/g
 - The SDK will still work on lower versions of Android, but Bluetooth Low Energy Scanning will be disabled. You will still be able to make use of the Sites Nearby functionality as this does not involve scanning for beacons.  
 
 ####Google Play Services
-- The required minimum version of Google Play Services is 5.0.77-000 (r18). However we recommend the latest version of Google Play Services to be integrated.
+- The required minimum version of Google Play Services is 5.0.77-000 (r18), and maximun version is 7.8.0(r26). DO NOT use 8.1.0 which is not back-ward compatible.
+- In Android Studio, add the following dependency:
+``` gradle
+compile 'com.google.android.gms:play-services:7.8.+'
+```
 
 ## Have a Question?
 
