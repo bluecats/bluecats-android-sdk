@@ -1,6 +1,20 @@
-BlueCats SDK for Android v1.10.3
+Changelogs of BlueCats SDK for Android v1.10.x
 ====================
 
+#v1.10.4
+This release fixes the location permission issue on Android 6.0.
+
+##Fixed:
+
+If the app is targeting Android SDK 23 but not granted the Location services permission by the end user, the old SDK v1.10.3 will crash due to calling Android's Location API without permission. This crashing is fixed in v1.10.4.
+
+See more detailed information: 
+[Updateing to Android 6.0 Location Services Permissions](https://github.com/bluecats/bluecats-android-sdk/wiki/Updating-to-Android-6.0-and-Location-Services-Permissions)
+
+
+-----------------
+
+#v1.10.3
 This release is a workaround for a GPS issue in release 1.10.2 that was causing excessive battery drain on the device if GPS was enabled.
 
 The issue is with Google's LocationServices.FusedLocationApi not releasing a hold on GPS for its location updates. 
