@@ -73,5 +73,11 @@ compile 'com.google.code.gson:gson:2.5'
 compile 'com.google.android.gms:play-services:8.4.0'
 ```
 
-### Any Questions?
+### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
+
+### Have a Question?
+* If you've found a bug, please open an issue.
+* If you have a general question, see our [support center](support.bluecats.com) for articles on our platform and beacons.
+* If you want a particular feature, please open an issue.
+* If taking a look at our SDK for the first time, please see our [Android SDK documentation](https://github.com/bluecats/bluecats-android-sdk/wiki).
