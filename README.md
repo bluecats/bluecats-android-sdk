@@ -22,7 +22,7 @@ The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the
 #### b) Using Android Studio
 Add the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:sdk:1.13.7'
+compile 'com.bluecats:sdk:1.13.7b'
 ```
 
 ### Step 2.
@@ -65,13 +65,6 @@ If you want the SDK to start when the device starts, you may add this to your xm
 ```
 #### Android SDK 4.3+ (API Level 18+)
 The SDK will still work on lower versions of Android, but Bluetooth Low Energy Scanning will be disabled. You will still be able to make use of the Sites Nearby functionality as this does not involve scanning for beacons.
-
-#### Gradle Dependencies
-Two dependencies need to be added for the BlueCats SDK to function:
-```gradle
-compile 'com.google.code.gson:gson:2.5'
-compile 'com.google.android.gms:play-services:8.4.0'
-```
 
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
