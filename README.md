@@ -51,11 +51,20 @@ You will need to make the following changes to your integration:
 - The SDK will still work on lower versions of Android, but Bluetooth Low Energy Scanning will be disabled. You will still be able to make use of the Sites Nearby functionality as this does not involve scanning for beacons.  
 
 ####Google Play Services
-- The required minimum version of Google Play Services is 8.1 (8115000 or r27).
+- The required minimum version of Google Play Services is 8.1 (8115000 or r27), 8.4(8487000 or r29) is recommended.
 - In Android Studio, add the following dependency:
 ``` gradle
 compile 'com.google.android.gms:play-services:8.1.+'
 ```
+
+## Building Environment of Release v1.13.8
+
+* Eclipse: 4.4.1(20140925-1800)
+* Android SDK tool: 24.4
+* Android SDK platorm-tools: 23.0.1
+* Android SDK build tools: 23.0.1
+* Project target: android-23
+* Google play Services: 8.4(8487000 or r29)
 
 ## Have a Question?
 
