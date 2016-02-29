@@ -1,7 +1,7 @@
 BlueCats SDK for Android
 ====================
 
-[ ![Download](https://api.bintray.com/packages/bluecats/maven/SDK/images/download.svg) ](https://bintray.com/bluecats/maven/SDK/\_latestVersion)
+[ ![Download](https://api.bintray.com/packages/bluecats/maven/bluecats-android-sdk/images/download.svg) ](https://bintray.com/bluecats/maven/bluecats-android-sdk/\_latestVersion)
 
 The BlueCats' SDKs have been developed for easy integration and to offer flexiblity across different use cases.  Please let us know if you have any questions at developers@bluecats.com.
 
@@ -22,7 +22,7 @@ The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the
 #### b) Using Android Studio
 Add the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:sdk:1.13.7b'
+compile 'com.bluecats:bluecats-android-sdk:1.13.8'
 ```
 
 ### Step 2.
