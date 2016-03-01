@@ -19,6 +19,11 @@ Copy the bluecats_sdk.jar and rest of the [ABI](https://developer.android.com/nd
 The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the appropriate libbluecats_sdk.so (contained in the various jni build folders). You may copy only the build needed for your app, or all of them if you are unsure exactly which are needed. More info on these builds can be found at the following URLs:  
 [http://developer.android.com/reference/android/os/Build.html](http://developer.android.com/reference/android/os/Build.html)  
 [https://developer.android.com/ndk/guides/abis.html](https://developer.android.com/ndk/guides/abis.html)
+
+Two extra dependencies will be required if you take this path:
+- [Google Play Services](https://developers.google.com/android/guides/setup) (Specifically location and ads)
+- [Gson](https://github.com/google/gson)
+
 #### b) Using Android Studio
 Add the following to your build.gradle:
 ```gradle
@@ -32,7 +37,7 @@ NOTE: If you don't already have an account on [app.bluecats.com](http://app.blue
 
 ### Requirements
 #### AndroidManifest.xml
-Update your AndroidManifest.xml file to include the following permissions:
+Update your AndroidManifest.xml file to add the following snippet which gives the SDK the permissions necessary to search for beacons efficiently, as well as allowing the `BlueCatsSDKService` to run.
 ```xml
 <uses-permission android:name="android.permission.BLUETOOTH" />
 <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -40,15 +45,14 @@ Update your AndroidManifest.xml file to include the following permissions:
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.WAKE_LOCK" />
-```
-You will need to add the 'BlueCatsSDKService' to the AndroidManifest within your application tags as well:
-```xml
+
 <application ...>
   ...
 
   <service android:name="com.bluecats.sdk.BlueCatsSDKService" />
 </application>
 ```
+
 If you want the SDK to start when the device starts, you may add this to your xml:
 ```xml
 <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
