@@ -73,6 +73,15 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
+## Building Environment of Release v1.13.8
+
+* Eclipse: 4.4.1 (20140925-1800)
+* Android SDK tools: 24.4
+* Android SDK platorm-tools: 23.0.1
+* Android SDK build tools: 23.0.1
+* Project target: android-23
+* Google play Services: 8.4 (8487000 or r29)
+
 ### Have a Question?
 * If you've found a bug, please open an issue.
 * If you have a general question, see our [support center](support.bluecats.com) for articles on our platform and beacons.
