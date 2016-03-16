@@ -21,7 +21,7 @@ The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the
 [https://developer.android.com/ndk/guides/abis.html](https://developer.android.com/ndk/guides/abis.html)
 
 Two extra dependencies will be required if you take this path:
-- [Google Play Services](https://developers.google.com/android/guides/setup) (Specifically location and ads)
+- [Google Play Services](https://developers.google.com/android/guides/setup) (Required version is 8.1 or above. Location and ads services are required. Either the full services library or these specific services can be added)
 - [Gson](https://github.com/google/gson)
 
 #### b) Using Android Studio
