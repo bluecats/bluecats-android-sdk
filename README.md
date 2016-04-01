@@ -24,11 +24,6 @@ Two extra dependencies will be required if you take this path:
 - [Google Play Services](https://developers.google.com/android/guides/setup) (Required version is 8.1 or above. Location and ads services are required. Either the full services library or these specific services can be added)
 - [Gson](https://github.com/google/gson)
 
-#### b) Using Android Studio
-Add the following to your build.gradle:
-```gradle
-compile 'com.bluecats:bluecats-android-sdk:1.13.8'
-```
 
 ### Step 2.
 Get an app token from [app.bluecats.com/apps](http://app.bluecats.com/apps) by clicking "Create New App" and giving your new app a name. Once created, your new app should appear in the list and you'll be able to access your app token by clicking the "Show App Token / Secret" button below it.
