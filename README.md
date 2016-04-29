@@ -29,8 +29,12 @@ Add the following to your build.gradle:
 ```gradle
 compile 'com.bluecats:bluecats-android-sdk:1.13.8'
 ```
-
 ### Step 2.
+Add the following to your proguard rules:
+```
+-keep class com.bluecats.sdk.** {*;}
+```
+### Step 3.
 Get an app token from [app.bluecats.com/apps](http://app.bluecats.com/apps) by clicking "Create New App" and giving your new app a name. Once created, your new app should appear in the list and you'll be able to access your app token by clicking the "Show App Token / Secret" button below it.
 
 NOTE: If you don't already have an account on [app.bluecats.com](http://app.bluecats.com/), you will need to create one in order to progress past this point. If you're unsure of what to do, send an email to [sales@bluecats.com](mailto:sales@bluecats.com) and we'll gladly help you out!
