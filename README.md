@@ -86,7 +86,7 @@ See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-s
 * Google play Services: 8.4 (8487000 or r29)
 
 ## Have a Question?
-* If you've found a bug, please open an issue.
+* If you've found a bug, please [open an issue](https://github.com/bluecats/bluecats-android-sdk/issues).
 * If you have a general question, see our [support center](support.bluecats.com) for articles on our platform and beacons.
-* If you want a particular feature, please open an issue.
-* If taking a look at our SDK for the first time, please see our [Android SDK documentation](https://github.com/bluecats/bluecats-android-sdk/wiki).
+* If you want a particular feature, please [open an issue](https://github.com/bluecats/bluecats-android-sdk/issues).
+* If taking a look at our SDK for the first time, please see our [Android SDK documentation](https://developer.bluecats.com/).
