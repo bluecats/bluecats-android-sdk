@@ -3,32 +3,32 @@ BlueCats SDK for Android
 
 [ ![Download](https://api.bintray.com/packages/bluecats/maven/bluecats-android-sdk/images/download.svg) ](https://bintray.com/bluecats/maven/bluecats-android-sdk/\_latestVersion)
 
-The BlueCats' SDKs have been developed for easy integration and to offer flexiblity across different use cases.  Please let us know if you have any questions at developers@bluecats.com.
+The BlueCats' SDKs have been developed for easy integration and to offer flexibility across different use cases.  Please let us know if you have any questions at developers@bluecats.com.
 
 **See the [BlueCats Developer Portal](https://developer.bluecats.com) for SDK documentation and getting started guides.**
 
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
+## What's new in v2.0.1
+* Eddystone formats are supported.
+* A new BCBeaconManager is available to filter BlueCats Beacon, iBeacon, Eddystone, etc.
+* Google Play Service dependency is removed.
+
+See Release Notes for more details.
+
 ## Android SDK Installation  
 ### Step 1.
-Installing the SDK into your project.
-
-#### a) Using Eclipse
-Copy the bluecats_sdk.jar and rest of the [ABI](https://developer.android.com/ndk/guides/abis.html) folders (armeabi, armeabi-v7a, etc) from this git repository into your project's libs folder.
-
-The bluecats_sdk.jar will need to be copied in to the libs folder AS WELL AS the appropriate libbluecats_sdk.so (contained in the various jni build folders). You may copy only the build needed for your app, or all of them if you are unsure exactly which are needed. More info on these builds can be found at the following URLs:  
-[http://developer.android.com/reference/android/os/Build.html](http://developer.android.com/reference/android/os/Build.html)  
-[https://developer.android.com/ndk/guides/abis.html](https://developer.android.com/ndk/guides/abis.html)
-
-Two extra dependencies will be required if you take this path:
-- [Google Play Services](https://developers.google.com/android/guides/setup) (Required version is 8.1 or above. Location and ads services are required. Either the full services library or these specific services can be added)
-- [Gson](https://github.com/google/gson)
-
-#### b) Using Android Studio
-Add the following to your build.gradle:
+Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:bluecats-android-sdk:1.13.8'
+compile 'com.bluecats:bluecats-android-sdk:2.0.1'
 ```
+It will automatically add the extra dependencies for you:
+```gradle
+compile 'com.google.code.gson:gson:2.2.4'
+compile 'com.android.support:support-v4:23.3.0'
+```
+If you're using Eclipse, please read the [instructions](https://gist.github.com/henrybluecats/33d11f7852b2d24157e9820543f88ede).
+
 ### Step 2.
 Add the following to your proguard rules:
 ```
@@ -61,13 +61,13 @@ If you want the SDK to start when the device starts, you may add this to your xm
 <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
 <application ...>
-	...
+    ...
 
-	<receiver android:name="com.bluecats.sdk.BlueCatsSDKServiceReceiver" >
-	    <intent-filter>
-	        <action android:name="android.intent.action.BOOT_COMPLETED" />
-	    </intent-filter>
-	</receiver>
+    <receiver android:name="com.bluecats.sdk.BlueCatsSDKServiceReceiver" >
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+    </receiver>
 </application>
 ```
 #### Android SDK 4.3+ (API Level 18+)
@@ -76,14 +76,16 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Building Environment of Release v1.13.8
-
-* Eclipse: 4.4.1 (20140925-1800)
-* Android SDK tools: 24.4
-* Android SDK platorm-tools: 23.1
-* Android SDK build tools: 23.0.1
-* Project target: android-23
-* Google play Services: 8.4 (8487000 or r29)
+## Building Environment of Release v2.0.1
+* Android studio 2.1.2
+* Android Gradle plugin 2.1.2
+* Gradle Version 2.14
+* Android NDK r11
+* android SDK tool 25.1.7
+* android SDK platorm-tools 24
+* android SDK build tools 23.0.3
+* JAVA versoin: java 8
+* OS: MAC OSX 10.11.5
 
 ## Have a Question?
 * If you've found a bug, please [open an issue](https://github.com/bluecats/bluecats-android-sdk/issues).
