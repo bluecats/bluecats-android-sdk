@@ -3,7 +3,7 @@ BlueCats SDK for Android
 
 [ ![Download](https://api.bintray.com/packages/bluecats/maven/bluecats-android-sdk/images/download.svg) ](https://bintray.com/bluecats/maven/bluecats-android-sdk/\_latestVersion)
 
-The BlueCats' SDKs have been developed for easy integration and to offer flexibility across different use cases.  Please let us know if you have any questions at developers@bluecats.com.
+The BlueCats' SDKs have been developed for easy integration and to offer flexibility across different use cases. Please email us at <a href="mailto:developers@bluecats.com">developers@bluecats.com</a> if you have any questions!
 
 **See the [BlueCats Developer Portal](https://developer.bluecats.com) for SDK documentation and getting started guides.**
 
@@ -14,26 +14,31 @@ Need some beacons? Check out our online store for a [StarterPack](http://store.b
 * A new BCBeaconManager is available to filter BlueCats Beacon, iBeacon, Eddystone, etc.
 * Google Play Service dependency is removed.
 
-See Release Notes for more details.
+See Release Notes and the [migration guide](https://developer.bluecats.com/guides/android-migrating-from-1-13-8-to-2-0-0-2-0-1) for more details.
 
 ## Android SDK Installation  
 ### Step 1.
+#### a) Using Android
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
 compile 'com.bluecats:bluecats-android-sdk:2.0.1'
 ```
+
 It will automatically add the extra dependencies for you:
 ```gradle
 compile 'com.google.code.gson:gson:2.2.4'
 compile 'com.android.support:support-v4:23.3.0'
 ```
-If you're using Eclipse, please read the [instructions](https://gist.github.com/henrybluecats/33d11f7852b2d24157e9820543f88ede).
+
+### b) Using Eclipse
+Follow the instructions detailed [here](https://gist.github.com/henrybluecats/33d11f7852b2d24157e9820543f88ede).
 
 ### Step 2.
-Add the following to your proguard rules:
+Add the following to your ProGuard rules:
 ```
 -keep class com.bluecats.sdk.** {*;}
 ```
+
 ### Step 3.
 Get an app token from [app.bluecats.com/apps](http://app.bluecats.com/apps) by clicking "Create New App" and giving your new app a name. Once created, your new app should appear in the list and you'll be able to access your app token by clicking the "Show App Token / Secret" button below it.
 
@@ -41,7 +46,7 @@ NOTE: If you don't already have an account on [app.bluecats.com](http://app.blue
 
 ### Requirements
 #### AndroidManifest.xml
-Update your AndroidManifest.xml file to add the following snippet which gives the SDK the permissions necessary to search for beacons efficiently, as well as allowing the `BlueCatsSDKService` to run.
+While the following XML isn't vital to add manually (the SDK adds it automatically), it's kept here for the sake of ensuring you understand what is required of the SDK. The permissions and service is the absolute minimum required to allow the SDK to run.
 ```xml
 <uses-permission android:name="android.permission.BLUETOOTH" />
 <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -70,6 +75,10 @@ If you want the SDK to start when the device starts, you may add this to your xm
     </receiver>
 </application>
 ```
+
+#### Android 6.0+ (Marshmallow) Location Permissions
+Android 6.0 introduces a new permission model which changes the way Location Services permissions are managed. Before scanning for beacons the app is required to request location permissions from the user via a system dialogue. Detailed information on implementing location permission support in Android 6.0 can be found [here](https://developer.bluecats.com/guides/android-6-0-and-location-services-permissions).
+
 #### Android SDK 4.3+ (API Level 18+)
 The SDK will still work on lower versions of Android, but Bluetooth Low Energy Scanning will be disabled. You will still be able to make use of the Sites Nearby functionality as this does not involve scanning for beacons.
 
@@ -77,14 +86,14 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
 ## Building Environment of Release v2.0.1
-* Android studio 2.1.2
-* Android Gradle plugin 2.1.2
+* Android Studio 2.1.2
+* Android Gradle Plugin 2.1.2
 * Gradle Version 2.14
 * Android NDK r11
-* android SDK tool 25.1.7
-* android SDK platorm-tools 24
-* android SDK build tools 23.0.3
-* JAVA versoin: java 8
+* Android SDK Tools 25.1.7
+* Android SDK Platform-Tools 23
+* Android SDK Build Tools 23.0.3
+* Java Version: 8
 * OS: MAC OSX 10.11.5
 
 ## Have a Question?
