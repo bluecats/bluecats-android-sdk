@@ -9,7 +9,12 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
-## What's new in v2.0.1
+## Change Logs
+### v2.0.2
+* A new BCLogManager is introduced to manage SDK logs in scope of App for debug purpose.[See example](https://gist.github.com/henrybluecats/c08d8726d5607cde8cc23b2abac36ae6)
+* Optimised beacon scanner for Android 7.
+
+### v2.0.1
 * Eddystone formats are supported.
 * A new BCBeaconManager is available to filter BlueCats Beacon, iBeacon, Eddystone, etc.
 * Google Play Service dependency is removed.
@@ -21,13 +26,14 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 #### a) Using Android
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:bluecats-android-sdk:2.0.1'
+compile 'com.bluecats:bluecats-android-sdk:2.0.2'
 ```
 
 It will automatically add the extra dependencies for you:
 ```gradle
 compile 'com.google.code.gson:gson:2.2.4'
-compile 'com.android.support:support-v4:23.3.0'
+compile 'com.android.support:support-compat:24.2.0'
+compile 'com.android.support:support-core-utils:24.2.0'
 ```
 
 ### b) Using Eclipse
@@ -85,14 +91,14 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Building Environment of Release v2.0.1
-* Android Studio 2.1.2
-* Android Gradle Plugin 2.1.2
-* Gradle Version 2.14
+## Building Environment of Release v2.0.2
+* Android Studio 2.1.3
+* Android Gradle Plugin 2.1.3
+* Gradle Version 2.14.1
 * Android NDK r11
 * Android SDK Tools 25.1.7
-* Android SDK Platform-Tools 23
-* Android SDK Build Tools 23.0.3
+* Android SDK Platform-Tools 24
+* Android SDK Build Tools 24.0.1
 * Java Version: 8
 * OS: MAC OSX 10.11.5
 
