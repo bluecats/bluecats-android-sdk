@@ -10,6 +10,10 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
+### v2.0.3
+* Optimised Beacon sync.
+* Optimised stability.
+
 ### v2.0.2
 * A new BCLogManager is introduced to manage SDK logs in scope of App for debug purpose.[See example](https://gist.github.com/henrybluecats/c08d8726d5607cde8cc23b2abac36ae6)
 * Optimised beacon scanner for Android 7.
@@ -26,7 +30,7 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 #### a) Using Android
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:bluecats-android-sdk:2.0.2'
+compile 'com.bluecats:bluecats-android-sdk:2.0.3'
 ```
 
 It will automatically add the extra dependencies for you:
@@ -83,7 +87,7 @@ If you want the SDK to start when the device starts, you may add this to your xm
 ```
 
 #### Android 6.0+ (Marshmallow) Location Permissions
-Android 6.0 introduces a new permission model which changes the way Location Services permissions are managed. Before scanning for beacons the app is required to request location permissions from the user via a system dialogue. Detailed information on implementing location permission support in Android 6.0 can be found [here](https://developer.bluecats.com/guides/android-6-0-and-location-services-permissions).
+Android 6.0+ introduces a new permission model which changes the way Location Services permissions are managed. Before scanning for beacons the app is required to request location permissions from the user via a system dialogue. Detailed information on implementing location permission support in Android 6.0 can be found [here](https://developer.bluecats.com/guides/android-6-0-and-location-services-permissions).
 
 #### Android SDK 4.3+ (API Level 18+)
 The SDK will still work on lower versions of Android, but Bluetooth Low Energy Scanning will be disabled. You will still be able to make use of the Sites Nearby functionality as this does not involve scanning for beacons.
@@ -91,7 +95,7 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Building Environment of Release v2.0.2
+## Building Environment of Release v2.0.3
 * Android Studio 2.1.3
 * Android Gradle Plugin 2.1.3
 * Gradle Version 2.14.1
