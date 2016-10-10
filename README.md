@@ -40,6 +40,16 @@ compile 'com.android.support:support-compat:24.2.0'
 compile 'com.android.support:support-core-utils:24.2.0'
 ```
 
+If you want to use your own dependencies on Gson and Support with another version, exclude the transitive dependencies like this:
+```gradle
+compile('com.bluecats:bluecats-android-sdk:2.0.3', {
+        exclude group: 'com.google.code.gson', module: 'gson'
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclude group: 'com.android.support', module: 'support-core-utils'
+    })
+```
+Please **NOTE** that missing Gson or Support dependencies will cause a **runtime crash** due to ClassNotFoundException, so only exclude them from BlueCats SDK if you are sure you've included the correct dependencies in build.gradle.
+
 ### b) Using Eclipse
 Follow the instructions detailed [here](https://gist.github.com/henrybluecats/33d11f7852b2d24157e9820543f88ede).
 
