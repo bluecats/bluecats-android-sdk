@@ -1,7 +1,7 @@
 BlueCats SDK for Android
 ====================
 
-[ ![Download](https://api.bintray.com/packages/bluecats/maven/bluecats-android-sdk/images/download.svg) ](https://bintray.com/bluecats/maven/bluecats-android-sdk/\_latestVersion)
+[ ![Download](https://api.bintray.com/packages/bluecats/maven/bluecats-sdk-release/images/download.svg) ](https://bintray.com/bluecats/maven/bluecats-sdk-release/_latestVersion)
 
 The BlueCats' SDKs have been developed for easy integration and to offer flexibility across different use cases. Please email us at <a href="mailto:developers@bluecats.com">developers@bluecats.com</a> if you have any questions!
 
@@ -10,7 +10,7 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
-### v2.0.4
+### v2.0.5
 * Optimised stability.
 
 ### v2.0.3
@@ -33,19 +33,19 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 #### a) Using Android
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:bluecats-android-sdk:2.0.4'
+compile 'com.bluecats:bluecats-android-sdk:2.0.5'
 ```
 
 It will automatically add the extra dependencies for you:
 ```gradle
-compile 'com.google.code.gson:gson:2.2.4'
-compile 'com.android.support:support-compat:24.2.1'
-compile 'com.android.support:support-core-utils:24.2.1'
+compile 'com.google.code.gson:gson:2.4'
+compile 'com.android.support:support-compat:24+'
+compile 'com.android.support:support-core-utils:24+'
 ```
 
 If you want to use your own dependencies on Gson and Support with another version, exclude the transitive dependencies like this:
 ```gradle
-compile('com.bluecats:bluecats-android-sdk:2.0.4', {
+compile('com.bluecats:bluecats-android-sdk:2.0.5', {
         exclude group: 'com.google.code.gson', module: 'gson'
         exclude group: 'com.android.support', module: 'support-compat'
         exclude group: 'com.android.support', module: 'support-core-utils'
@@ -108,16 +108,16 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Building Environment of Release v2.0.4
-* Android Studio 2.2.3
-* Android Gradle Plugin 2.2.3
+## Building Environment of Release v2.0.5
+* Android Studio 2.3.2
+* Android Gradle Plugin 2.1.3
 * Gradle Version 2.14.1
-* Android NDK r13
-* Android SDK Tools 25.2.5
+* Android NDK r14
+* Android SDK Tools 25.3.5
 * Android SDK Platform-Tools 24
 * Android SDK Build Tools 24.0.1
 * Java Version: 8
-* OS: MAC OSX 10.12.3
+* OS: MAC OSX 10.12.4
 
 ## Have a Question?
 * If you've found a bug, please [open an issue](https://github.com/bluecats/bluecats-android-sdk/issues).
