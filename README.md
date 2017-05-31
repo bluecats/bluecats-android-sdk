@@ -11,7 +11,10 @@ Need some beacons? Check out our online store for a [StarterPack](http://store.b
 
 ## Change Logs
 ### v2.0.5
-* Optimised stability.
+* Stability Update. Fix for potential crash scenario during SDK shutdown after stopPurring request.
+
+### v2.0.4
+* Stability Update. Fixes sqlite warnings. Adds support for StrictMode during debug. Fixes for potential Local Storage (sqlite) crashes.
 
 ### v2.0.3
 * Optimised Beacon sync.
