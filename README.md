@@ -10,6 +10,9 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
+### v2.0.7
+* Stability Update. Fix for ANR scenario during SDK shutdown after stopPurring request.
+
 ### v2.0.5
 * Stability Update. Fix for potential crash scenario during SDK shutdown after stopPurring request.
 
@@ -36,7 +39,7 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 #### a) Using Android
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:bluecats-android-sdk:2.0.5'
+compile 'com.bluecats:bluecats-android-sdk:2.0.7'
 ```
 
 It will automatically add the extra dependencies for you:
@@ -48,7 +51,7 @@ compile 'com.android.support:support-core-utils:24+'
 
 If you want to use your own dependencies on Gson and Support with another version, exclude the transitive dependencies like this:
 ```gradle
-compile('com.bluecats:bluecats-android-sdk:2.0.5', {
+compile('com.bluecats:bluecats-android-sdk:2.0.7', {
         exclude group: 'com.google.code.gson', module: 'gson'
         exclude group: 'com.android.support', module: 'support-compat'
         exclude group: 'com.android.support', module: 'support-core-utils'
@@ -111,16 +114,16 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Building Environment of Release v2.0.5
-* Android Studio 2.3.2
-* Android Gradle Plugin 2.1.3
-* Gradle Version 2.14.1
-* Android NDK r14
-* Android SDK Tools 25.3.5
-* Android SDK Platform-Tools 24
-* Android SDK Build Tools 24.0.1
+## Building Environment of Release v2.0.7
+* Android Studio 2.3.3
+* Android Gradle Plugin 2.3.3
+* Gradle Version 3.3
+* Android NDK r15
+* Android SDK Tools 26.0.2
+* Android SDK Platform-Tools 26.0.0
+* Android SDK Build Tools 25.0.2
 * Java Version: 8
-* OS: MAC OSX 10.12.4
+* OS: MAC OSX 10.12.5
 
 ## Have a Question?
 * If you've found a bug, please [open an issue](https://github.com/bluecats/bluecats-android-sdk/issues).
