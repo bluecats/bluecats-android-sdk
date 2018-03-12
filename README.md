@@ -36,7 +36,7 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 
 ## Android SDK Installation  
 ### Step 1.
-#### a) Using Android
+#### a) Using Android Studio
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
 compile 'com.bluecats:bluecats-android-sdk:2.0.7'
