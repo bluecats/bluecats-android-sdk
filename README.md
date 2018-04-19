@@ -10,6 +10,9 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
+### v2.0.8
+* Stability Update. Optimize data request for tap behaviours.
+
 ### v2.0.7
 * Stability Update. Fix for ANR scenario during SDK shutdown after stopPurring request.
 
@@ -39,19 +42,19 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 #### a) Using Android Studio
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:bluecats-android-sdk:2.0.7'
+compile 'com.bluecats:bluecats-android-sdk:2.0.8'
 ```
 
 It will automatically add the extra dependencies for you:
 ```gradle
 compile 'com.google.code.gson:gson:2.4'
-compile 'com.android.support:support-compat:24+'
-compile 'com.android.support:support-core-utils:24+'
+compile 'com.android.support:support-compat:26.1.0'
+compile 'com.android.support:support-core-utils:26.1.0'
 ```
 
 If you want to use your own dependencies on Gson and Support with another version, exclude the transitive dependencies like this:
 ```gradle
-compile('com.bluecats:bluecats-android-sdk:2.0.7', {
+compile('com.bluecats:bluecats-android-sdk:2.0.8', {
         exclude group: 'com.google.code.gson', module: 'gson'
         exclude group: 'com.android.support', module: 'support-compat'
         exclude group: 'com.android.support', module: 'support-core-utils'
@@ -104,6 +107,8 @@ If you want the SDK to start when the device starts, you may add this to your xm
     </receiver>
 </application>
 ```
+#### Android 8.0+ (Oreo) Background limitation
+Android 8 instroduces a restricted background limitaion: The background services are not allowed to start if the app has no foreground job running. Our SDK so far doesn't support JobSerivce as JobService provides low responsiveness for foreground scenarios. If your app requires our SDK running in background, please follow Google's guide to work around. [here](https://developer.android.com/about/versions/oreo/background.html#services)
 
 #### Android 6.0+ (Marshmallow) Location Permissions
 Android 6.0+ introduces a new permission model which changes the way Location Services permissions are managed. Before scanning for beacons the app is required to request location permissions from the user via a system dialogue. Detailed information on implementing location permission support in Android 6.0 can be found [here](https://developer.bluecats.com/guides/android-6-0-and-location-services-permissions).
@@ -114,16 +119,16 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Building Environment of Release v2.0.7
-* Android Studio 2.3.3
-* Android Gradle Plugin 2.3.3
-* Gradle Version 3.3
+## Building Environment of Release v2.0.8
+* Android Studio 3.1.1
+* Android Gradle Plugin 3.1.1
+* Gradle Version 4.4
 * Android NDK r15
-* Android SDK Tools 26.0.2
-* Android SDK Platform-Tools 26.0.0
-* Android SDK Build Tools 25.0.2
-* Java Version: 8
-* OS: MAC OSX 10.12.5
+* Android SDK Tools 27.0.3
+* Android SDK Platform-Tools 26
+* Android SDK Build Tools 27.0.3
+* Java Version: java 8
+* OS: MAC OSX 10.13.4
 
 ## Have a Question?
 * If you've found a bug, please [open an issue](https://github.com/bluecats/bluecats-android-sdk/issues).
