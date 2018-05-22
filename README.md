@@ -65,6 +65,9 @@ Follow the instructions detailed [here](https://gist.github.com/henrybluecats/33
 ### Step 2.
 Add the following to your ProGuard rules:
 ```
+-renamesourcefileattribute SourceFile
+-keepattributes LineNumberTable, SourceFile
+
 -keep class com.bluecats.sdk.** {*;}
 ```
 
