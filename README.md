@@ -43,7 +43,7 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 #### a) Using Android Studio
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-compile 'com.bluecats:bluecats-android-sdk:2.1.2'
+implementation 'com.bluecats:bluecats-android-sdk:2.1.2'
 ```
 
 It will automatically add the extra dependencies for you:
