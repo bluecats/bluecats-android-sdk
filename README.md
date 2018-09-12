@@ -10,6 +10,9 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
+### v2.1.3
+* Added an embedded BCBeaconManagerCallback instance to enable background scan for the situations when the BlueCatsSDK is running but no app compoments are able to receive beacons list, especially for Android 8+. See Sample Code here in [background-scan branch](https://github.com/henrybluecats/JobServiceSample/tree/background-scan)
+
 ### v2.1.2
 * Support Android O+ for the background execution limits.
 * Stability Update. 
@@ -43,7 +46,7 @@ See Release Notes and the [migration guide](https://developer.bluecats.com/guide
 #### a) Using Android Studio
 Installing the SDK into your project by adding the following to your build.gradle:
 ```gradle
-implementation 'com.bluecats:bluecats-android-sdk:2.1.2'
+implementation 'com.bluecats:bluecats-android-sdk:2.1.3'
 ```
 
 It will automatically add the extra dependencies for you:
@@ -55,7 +58,7 @@ compile 'com.android.support:support-core-utils:24+'
 
 If you want to use your own dependencies on Gson and Support with another version, exclude the transitive dependencies like this:
 ```gradle
-compile('com.bluecats:bluecats-android-sdk:2.1.2', {
+compile('com.bluecats:bluecats-android-sdk:2.1.3', {
         exclude group: 'com.google.code.gson', module: 'gson'
         exclude group: 'com.android.support', module: 'support-compat'
         exclude group: 'com.android.support', module: 'support-core-utils'
@@ -124,7 +127,7 @@ The SDK will still work on lower versions of Android, but Bluetooth Low Energy S
 ### Sample Code
 See the sample [BlueCats Scratching Post](https://github.com/bluecats/bluecats-scratchingpost-android) app for usage and integration instructions.
 
-## Building Environment of Release v2.1.2
+## Building Environment of Release v2.1.3
 * Android Studio 3.1.3
 * Android Gradle Plugin 3.1.1
 * Gradle Version 4.4
