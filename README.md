@@ -10,6 +10,9 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
+### v2.1.4
+* Fixed an issue with the Local Storage Manager being null when the SDK is stopped and restarted in the background on Android 8.
+
 ### v2.1.3
 * Added an embedded BCBeaconManagerCallback instance to enable background scan for the situations when the BlueCatsSDK is running but no app compoments are able to receive beacons list, especially for Android 8+. See Sample Code here in [background-scan branch](https://github.com/henrybluecats/JobServiceSample/tree/background-scan)
 
