@@ -10,6 +10,9 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
+### v2.1.4-r3
+* Added support for beacon settings updates for newer beacon models.
+
 ### v2.1.4-r2
 * Added additional security features.
 
