@@ -10,6 +10,10 @@ The BlueCats' SDKs have been developed for easy integration and to offer flexibi
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
 
 ## Change Logs
+
+### v2.1.4-r5
+* Improved background notifications.
+
 ### v2.1.4-r4
 * Improved startup scanning, more reliable scan results. Fixed bug with beacon region caching.
 
