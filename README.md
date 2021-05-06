@@ -12,6 +12,10 @@ Need some beacons? Check out our online store for a [StarterPack](http://store.b
 As JCenter sunsets, Our SDK is now available on Maven Central, you don't need to change much, just make sure you add `MavenCentral()` in your repositories of build.gradle. Alternatively, artifacts are also available directly from [maven server](https://search.maven.org/artifact/com.bluecats/bluecats-android-sdk/)
 
 ## Change Logs
+### v2.1.7
+- Added shutdown command for BC24+ serial beacons
+- Added setting update for OneKey security type 
+- Added cumulative improvement for stability
 
 ### v2.1.4-r5
 * Improved background notifications.
