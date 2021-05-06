@@ -1,13 +1,15 @@
 BlueCats SDK for Android
 ====================
 
-After JCenter sunsets, Our SDK is now available on Maven Central, make sure you add `MavenCentral()` in your repositories of build.gradle.
 
 The BlueCats' SDKs have been developed for easy integration and to offer flexibility across different use cases. Please email us at <a href="mailto:developers@bluecats.com">developers@bluecats.com</a> if you have any questions!
 
 **See the [BlueCats Developer Portal](https://developer.bluecats.com) for SDK documentation and getting started guides.**
 
 Need some beacons? Check out our online store for a [StarterPack](http://store.bluecats.com/collections/featured-products/products/bluecats-starterpack-with-usb) or email our [sales team](mailto:sales@bluecats.com).
+
+## JCenter off, Maven Central on
+As JCenter sunsets, Our SDK is now available on Maven Central, make sure you add `MavenCentral()` in your repositories of build.gradle. Alternatively, artifacts are also available directly from [maven server](https://search.maven.org/artifact/com.bluecats/bluecats-android-sdk/)
 
 ## Change Logs
 
