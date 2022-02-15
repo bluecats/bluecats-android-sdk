@@ -12,6 +12,9 @@ Need some beacons? Check out our online store for a [StarterPack](http://store.b
 As JCenter sunsets, Our SDK is now available on Maven Central, you don't need to change much, just make sure you add `mavenCentral()` in your repositories of build.gradle. Alternatively, artifacts are also available directly from [maven server](https://search.maven.org/artifact/com.bluecats/bluecats-android-sdk/)
 
 ## Change Logs
+### v2.1.8
+- Added support to Android 12 including FLAG_IMMUTABLE flag and BLUETOOTH_SCAN, BLUETOOTH_CONNECT permission
+
 ### v2.1.7
 - Added shutdown command for BC24+ serial beacons
 - Added setting update for OneKey security type 
@@ -124,6 +127,11 @@ While the following XML isn't vital to add manually (the SDK adds it automatical
   ...
   <service android:enabled="true" android:name="com.bluecats.sdk.BlueCatsSDKService" android:permission="android.permission.BIND_JOB_SERVICE"/>
 </application>
+```
+If you app is targeting Android 12+, add the addtional permissions:
+```xml
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 ```
 
 If you want the SDK to start when the device starts, you may add this to your xml:
